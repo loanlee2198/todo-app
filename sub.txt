@@ -1,3 +1,6 @@
-public int sub(int a,int b) {
+public int sub(int a,int b) throws Exception {
+	if(a - b < Integer.MIN) {
+		throw new Exception ("Exception : Exceed Integer.MIN value");
+	}
 	return a-b;
 }
